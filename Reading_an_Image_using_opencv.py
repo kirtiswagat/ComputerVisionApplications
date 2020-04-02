@@ -5,7 +5,7 @@ Created on Thu Apr  2 15:49:02 2020
 @author: Kirti Swagat Mohanty
 
 Library Used: OpenCV
-Versino: 4.2.0
+Version: 4.2.0
 Python Version: 3.7.4
 """
 
