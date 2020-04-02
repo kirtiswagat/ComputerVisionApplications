@@ -14,12 +14,12 @@ from cv2 import imwrite
 from cv2 import CascadeClassifier
 import os
 
-path='C:/Users/NIC/Documents/Kirti_Swagat/AI/Face_Detection/PJ-4_2863_SIEMANL_004_BSC_Q0601_000011/Logout/'
-image_name= 'Log_out_04_01_2020.jpg'
+path='C:/Users/Documents/Kirti_Swagat/AI/Face_Detection/'
+image_name= 'image.jpg'
 # load the photograph
 image = imread(path+image_name)
 
-detector = CascadeClassifier('C:/Users/NIC/Documents/Kirti_Swagat/AI/Face_Detection/haarcascade_frontalface_default.xml')
+detector = CascadeClassifier('C:/Users/Documents/Kirti_Swagat/AI/Face_Detection/haarcascade_frontalface_default.xml')
 
 faces= detector.detectMultiScale(image, 1.3, 5)
 
