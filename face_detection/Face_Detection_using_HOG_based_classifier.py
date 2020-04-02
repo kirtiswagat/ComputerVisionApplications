@@ -15,8 +15,8 @@ from cv2 import imshow
 import os
 
 
-path='C:/Users/NIC/Documents/Kirti_Swagat/AI/Face_Detection/PJ-4_2863_SIEMANL_004_BSC_Q0601_000011/Login/'
-image_name= 'Log_in_10_01_2020.jpg'
+path='C:/Users/Documents/Kirti_Swagat/AI/Face_Detection/'
+image_name= 'image.jpg'
 # load the photograph
 image = imread(path+image_name)
 
@@ -30,38 +30,7 @@ file_name= os.path.splitext(image_name)[0]
 output_result= open("./HOG/"+"HOG_Result_" + str(file_name) + ".txt", "w")
 output_result.write("No of Faces Detected Using HOG Method for the image named "+str(file_name)+":"+str(len(faces)))
 output_result.close()
-
      
 #imshow('Face Detection',image)
 waitKey(0)
 destroyAllWindows()
-'''
-imwrite("./HOG/" + image_name,image)
-file_name= os.path.splitext(image_name)[0]
-output_result= open("./HOG/"+"HOG_Result_" + str(file_name) + ".txt", "w")
-output_result.write("No of Faces Detected Using HOG Method for the image named "+str(file_name)+":"+str(len(faces)))
-output_result.close()
- 
-    '''
-
-'''
-#print("Number of Faces Detected:",len(faces))
-for i in range(len(faces)):
-    #print(len(faces))
-    x,y,width,height=faces[i]['box']
-    x2,y2= x+width, y+height
-    rectangle(image, (x,y), (x2,y2),(0,0,255),1)
-    #sub_faces=image[y:y2,x:x2]
-    #face_file_name="faces/face_"+str(y)+".jpg"
-    #imwrite(face_file_name,sub_faces)
-
-#imshow('face detection', image)
-imwrite("./HOG/" + image_name,image)
-file_name= os.path.splitext(image_name)[0]
-output_result= open("./HOG/"+"HOG_Result_" + str(file_name) + ".txt", "w")
-output_result.write("No of Faces Detected Using MTCNN Method for the image named "+str(file_name)+":"+str(len(faces)))
-output_result.close()
-waitKey(0)
-destroyAllWindows()
-
-'''
