@@ -2,7 +2,7 @@
 """
 Created on Thu Apr  2 22:17:09 2020
 
-@author: NIC
+@author:Kirti Swagat Mohanty
 """
 
 import face_recognition
