@@ -2,7 +2,7 @@
 """
 Created on Wed Apr  1 13:17:38 2020
 
-@author: NIC
+@author: Kirti Swagat Mohanty
 """
 
 from mtcnn.mtcnn import MTCNN
