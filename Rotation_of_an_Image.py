@@ -24,6 +24,7 @@ height, width= image.shape[0:2]
 print('The Height of the Image:',height)
 print('The Width of the Image',width)
 
+#getRotationMatrix2D(center, angle, scale)
 rotation_matrix= getRotationMatrix2D((width/2,height/2,),32,1)
 rotated_image = warpAffine(image, rotation_matrix, (width, height))
 
