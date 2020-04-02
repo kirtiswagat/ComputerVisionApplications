@@ -2,7 +2,7 @@
 """
 Created on Wed Apr  1 13:17:38 2020
 
-@author: NIC
+@author: Kirti Swagat Mohanty
 """
 
 from mtcnn.mtcnn import MTCNN
@@ -14,20 +14,12 @@ from cv2 import rectangle
 from cv2 import imwrite
 import os
 
-
-
-
-path='C:/Users/NIC/Documents/Kirti_Swagat/AI/Face_Detection/PJ-4_2863_SIEMANL_004_BSC_Q0601_000011/Logout/'
-image_name= 'Log_out_04_01_2020.jpg'
+path='C:/Users/Documents/Kirti_Swagat/AI/Face_Detection/'
+image_name= 'image.jpg'
 # load the photograph
 image = imread(path+image_name)
 
-
-
-
-'''
 #Face Detection Using MTCNN
-'''
 detector = MTCNN()
 # detect faces in the image
 faces = detector.detect_faces(image)
